@@ -2,7 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import { Image } from "astro:assets";
 
-import time from "../assets/imagen-3.png";
+import Time from "../components/Imagen4.astro";
 import Svg2 from "../components/Svg2.astro";
 import Html from "../components/Html.astro";
 import Css from "../components/Css.astro";
@@ -120,14 +120,8 @@ import NavbarDemo from "@/components/Navbar";
       class="[grid-area:6/1/8/3] xl:[grid-area:2/2/4/3] p-8 bg-[#D2DE32] rounded-3xl flex flex-col items-center justify-center"
     >
       <div class="flex flex-col gap-4 items-center justify-center text-center">
-        <div class="max-w-[400px] xl:max-w-[700px]">
-          <Image
-            src={time}
-            width="1080"
-            height="1080"
-            alt="Una descripción de mi imagen."
-            class="object-contain aspect-video saturate-200"
-          />
+        <div class="max-w-[400px] xl:max-w-[700px] object-contain">
+          <Time />
         </div>
         <h3 class="leading-none">Ahorra Tiempo!</h3>
         <p class="text-pretty">
