@@ -86,7 +86,7 @@ export default function ModalDemo() {
                         },
                         body: JSON.stringify({
                           from: "delivered@resend.dev",
-                          to: inputValue2,
+                          to: `${inputValue2}`,
                           subject: `Proyectos web Para ${inputValue1}`,
                           html: finalHtml,
                           text: "",
